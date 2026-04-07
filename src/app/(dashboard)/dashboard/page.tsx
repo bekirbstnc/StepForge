@@ -5,7 +5,7 @@ import {
   Users, 
   Zap, 
   ShoppingBag, 
-  CheckCircle2, 
+  CircleCheck, 
   TrendingUp, 
   DollarSign,
   Activity,
@@ -85,7 +85,7 @@ export default function DashboardPage() {
           title="Tasks Completed"
           value={stats.dailyTasksCompleted}
           description="Total tasks finished today"
-          icon={CheckCircle2}
+          icon={CircleCheck}
           trend={{ value: "+8%", positive: true }}
           color="bg-indigo-500"
         />

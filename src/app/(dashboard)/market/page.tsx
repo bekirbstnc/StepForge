@@ -13,7 +13,7 @@ import {
 import { db } from "@/lib/firebase";
 import { 
   Plus, 
-  Edit2, 
+  SquarePen, 
   Trash2, 
   ShoppingBag, 
   Zap, 
@@ -112,7 +112,7 @@ export default function MarketPage() {
               </div>
               <div className="flex gap-2">
                 <button onClick={() => { setEditingItem(item); setIsModalOpen(true); }} className="rounded-lg p-2 text-slate-500 hover:bg-slate-800 hover:text-indigo-400">
-                  <Edit2 className="h-4 w-4" />
+                  <SquarePen className="h-4 w-4" />
                 </button>
                 <button onClick={() => handleDelete(item.id)} className="rounded-lg p-2 text-slate-500 hover:bg-slate-800 hover:text-red-400">
                   <Trash2 className="h-4 w-4" />

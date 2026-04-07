@@ -15,10 +15,10 @@ import { db } from "@/lib/firebase";
 import { 
   Plus, 
   Search, 
-  Edit2, 
+  SquarePen, 
   Trash2, 
   Calendar, 
-  CheckCircle2, 
+  CircleCheck, 
   Clock,
   Zap,
   Ticket,
@@ -148,7 +148,7 @@ export default function TasksPage() {
                 <td className="px-6 py-4 text-sm font-semibold text-white">{task.total.toLocaleString()}</td>
                 <td className="px-6 py-4 text-right space-x-3">
                   <button onClick={() => { setEditingTask(task); setIsModalOpen(true); }} className="text-slate-400 hover:text-indigo-400 transition-colors">
-                    <Edit2 className="h-4 w-4" />
+                    <SquarePen className="h-4 w-4" />
                   </button>
                   <button onClick={() => handleDelete(task.id)} className="text-slate-400 hover:text-red-400 transition-colors">
                     <Trash2 className="h-4 w-4" />

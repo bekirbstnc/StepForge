@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { 
   LayoutDashboard, 
   TrendingUp, 
-  CheckSquare, 
+  SquareCheck, 
   ShoppingBag, 
   Users, 
   Calendar, 
@@ -17,7 +17,7 @@ import { useAuth } from "@/lib/auth-context";
 const navItems = [
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { name: "Economy", href: "/economy", icon: TrendingUp },
-  { name: "Tasks", href: "/tasks", icon: CheckSquare },
+  { name: "Tasks", href: "/tasks", icon: SquareCheck },
   { name: "Market", href: "/market", icon: ShoppingBag },
   { name: "Events", href: "/events", icon: Calendar },
   { name: "Users", href: "/users", icon: Users },
